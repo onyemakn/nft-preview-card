@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --blue-main-bg: hsl(217, 54%, 11%);
+    --blue-card-bg: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--blue-main-bg);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container1 {
+    background-color: var(--blue-card-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    max-width: 412px;
+    max-height: 694px;
+    border-radius: 20px;
+    margin: 50px 30px;
+}
+
+.container2 {
+    margin: 20px;
+}
+
+.nft-article {
+    margin: 20px auto;
+}
+
+.nft-article h3 {
+    color: var(--white);
+    padding-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+.nft-article p {
+    color: var(--soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.eth-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+}
+
+.line1 {
+    color: var(--blue-line);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.eth-amount, .days-left, .creator-profile {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.days-left{
+    place-content: end;
+}
+
+.eth-amount p {
+    color: var(--cyan);
+    padding: 0 5px;
+}
+
+.days-left p {
+    color: var(--soft-blue);
+    padding: 0 5px;
+}
+
+.creator-profile {
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.creator-profile img {
+    width: 30px;
+    padding: 1px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.creator-profile p span {
+    color: var(--soft-blue);
+}
+
+.creator-profile p {
+    color: var(--white);
+}
+
+.nft-image img {
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    html {
+        min-width: 375px;
+    }
+
+
+}
