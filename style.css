@@ -39,6 +39,8 @@ body {
 
 .container2 {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .nft-article {
@@ -116,12 +118,30 @@ body {
 }
 
 .nft-image img {
-    background-size: cover;
-    overflow: hidden;
     background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
     width: 100%;
     height:100%;
     border-radius: 10px;
+}
+
+.nft-image #Equilibrium:hover {
+    opacity:.5 ;
+}
+
+.nft-image:hover {
+    background: var(--cyan);
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.nft-image #icon-view {
+    visibility: hidden;
+}
+
+.nft-image #icon-view:hover {
+    visibility: visible;
 }
 
 @media only screen and (max-width: 375px) {
