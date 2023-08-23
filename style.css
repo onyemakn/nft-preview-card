@@ -28,8 +28,6 @@ body {
 
 .container1 {
     background-color: var(--blue-card-bg);
-    display: flex;
-    flex-direction: column;
     gap: 10%;
     max-width: 412px;
     max-height: 694px;
@@ -39,8 +37,8 @@ body {
 
 .container2 {
     margin: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .nft-article {
@@ -101,8 +99,7 @@ body {
     font-weight: 400;
 }
 
-.creator-profile img {
-    width: 30px;
+.creator-profile img {    width: 30px;
     padding: 1px;
     background-color: var(--white);
     border-radius: 50%;
@@ -117,7 +114,13 @@ body {
     color: var(--white);
 }
 
-.nft-image img {
+.nft-image {
+    display:grid;
+    align-items: center;
+    position: relative;
+}
+  
+.Equilibrium {
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
@@ -126,22 +129,28 @@ body {
     border-radius: 10px;
 }
 
-.nft-image #Equilibrium:hover {
+.icon-view {
+    position:absolute;
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+  
+
+.Equilibrium:hover {
     opacity:.5 ;
+}
+
+.nft-image:hover > .icon-view {
+    visibility: visible;
+    display: block;
 }
 
 .nft-image:hover {
     background: var(--cyan);
     border-radius: 10px;
     cursor:pointer;
-}
-
-.nft-image #icon-view {
-    visibility: hidden;
-}
-
-.nft-image #icon-view:hover {
-    visibility: visible;
 }
 
 @media only screen and (max-width: 375px) {
