@@ -106,7 +106,7 @@ body {
     margin-right: 15px;
 }
 
-.creator-profile p span {
+.creator-profile .creation-of {
     color: var(--soft-blue);
 }
 
@@ -139,11 +139,11 @@ body {
 }
   
 
-.nft-image:hover > .Equilibrium {
+.nft-image:hover .Equilibrium {
     opacity:.5 ;
 }
 
-.nft-image:hover > .icon-view {
+.nft-image:hover .icon-view {
     visibility: visible;
     display: block;
 }
@@ -152,6 +152,12 @@ body {
     background: var(--cyan);
     border-radius: 10px;
     cursor:pointer;
+}
+
+.nft-article h3:hover, .creator-name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+
 }
 
 @media only screen and (max-width: 375px) {
